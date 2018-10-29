@@ -52,8 +52,7 @@ The intended audience for GitPic is any user of reddit on a desktop environment.
 1.4 Product Scope
 -------------
 
-After users enter their determined restrictions including distance from the user’s location, their own dietary restrictions, etc., users will then get “cards” of restaurants that fit their requirements. These cards will provide an image of the restaurant or food from the restaurant, in which users will be able  to “thumbs up”( or swipe right) or “thumbs down”(or swipe left) to each restaurant presented. The "thumbs up"(or swiping right) indicates that the user is interested in the restaurant and will be added to a list, which the user can choose from  at the end. "Thumbs down" (or swiping left) indicates that the user is not interested and the restraunt will not be shown again in this search or added to the list at the end. The reason that the user is given the choice to either "thumbs up"/"thumbs down" or swipe left or right  is because we want to offer users an option in case their device has issues with either function.
-
+The scope of the product will be an intuitive program that the user can utilize to download full resolution pictures from Reddit. The product will work on the web or offline if you have an archived web page.
 
 
 2 Overall Description
@@ -61,54 +60,49 @@ After users enter their determined restrictions including distance from the user
 
 2.1 Product Perspective
 -------------------
-
-FoodSwipe™ is a mobile application designed to help users locate a restaurant that fits their dietary restrictions and otherwise. However, FoodSwipe™ is a self-contained product. A long-term goal would be to attach FoodSwipe™ to other sites for reviews, such as Yelp, Google Reviews, or TripAdvisor. FoodSwipe™ was conceived as a tool for users to decide on local food option in their area, designed in response to the growing number of food options and how difficult it has become for our users to decide between them.
-
-The system of FoodSwipe™ is to be initially designed as a mobile application. The app will need to communicate with the user’s GPS in order to view the restaurants in the user’s vicinity. This functionality will be embedded into FoodSwipe™ so that other functions in the application may be accessed without any transition between applications.
-
-The second part of the system will be a database used to store and reference information on restaurants around Loyola, as our first version. This database will be maintained separately from the application.
+GitPic is a windows based application for users to sit back and allow the program to scrape the web for pictures to be used as wallpapers or educational editing purposes. This program will be open source, allowing for the community to add features and fix known issues that will be found as the program develops. The benefit to the program being open source is that it will be an everlasting project that will continue to evolve over years to come.
 
 2.2 Product Functions
 -----------------
 
-* Our users choose the types of restaurants they want food from
+* User finds a reddit post with a picture they would like to save locally
 
 
-* We take user’s current location into consideration
+* User copies the URL from their web browser and pastes it into the program
 
 
-* The user then will be taken to a main menu, featuring “cards” of each restaurant is displayed, where the user can swipe right (approve) or swipe left (disapprove) on restaurants.
+* User can alternatively comment on the post to download the picture
 
 
 
-* The user can access their approved restaurants in their "Favorites" tab. When a restaurant is clicked on, the user will be brought to Google Maps with the restaurant's location.
+* Program will automatically scrape the web page to find the picture
     
 
 
 2.3 User Classes and Characteristics
 --------------------------------
 
-We are going for simple and minimalistic so people can quickly decide what to eat. Since this is a food app, there is no target age or gender. However, FoodSwipe™ may be more useful for people in urban areas where there is a wide variety of restaurants to choose from in the area.
+There is no particular class for our program, though it is limited to the scope of users that use Reddit.
 
 2.4 Operating Environment
 ---------------------
 
-FoodSwipe™ will be compatible with Apple and Android smartphones because we are using React-Native, which helps us be able to make the app cross-platform. 
+GitPic will only be available on Windows in the beginning, eventually moving onto Mac. It will not move to mobile environments, as they have their own method of saving pictures from Reddit.
 
 2.5 Design and Implementation Constraints
 -------------------------------------
 
-Internet connection is required to properly use FoodSwipe™, and the restaurants will be limited to the user’s area. New restaurants might be left out due to lack of information and appearance on Yelp or Google.
+User will require internet to find the Reddit post of their choosing, but the program will accept an online or archived site to scrape.
 
 2.6 User Documentation
 ------------------
 
-We will have several sources of documentation, including: user manuals, tutorials, and FAQ’s.
+The program will have a ReadME explaining how to use it.
 
 2.7 Assumptions and Dependencies
 ----------------------------
 
-Our assumptions are that FoodSwipe™ will be used primarily within the application on the user’s mobile device. The application may not work as intended, crash, or provide inaccurate location data if the platform does not have the hardware resources available. We are also assuming that the GPS will work uniformly within browser platforms. We will be developing for Android 6.0 Marshmallow and up and iOS 10.1.1 and up.
+Our groups assumptions are that our product will mainly be used by people looking for nice wallpapers for their desktop, or pictures to practice editing on.
 
 3 External Interface Requirements
 ===============================
@@ -116,18 +110,12 @@ Our assumptions are that FoodSwipe™ will be used primarily within the applicat
 3.1 User Interfaces
 ---------------
 
-Our user interface will be using a “card” interface, similar to applications such as Tinder. This user interface will allow users to “thumbs up” (or swipe right) and “thumbs down”(or swipe left) restaurants that fit their criteria.
-
-![Alt text](/doc/WireFrame.png)
-![Alt text](/doc/WireFrame2.png)
-![Alt text](/doc/WireFrame3.png)
-
+Our user interface will be a simple UI with an entry box for the Reddit URL. It may possibly have an option to log-in to your Reddit account.
 
 3.2 Software Interfaces
 -------------------
 
-* React-native
-* Redux 
+* Java
 
 4 System Features
 ===============
@@ -148,11 +136,11 @@ The swipe function is dynamic to the user’s interactions. Users can swipe righ
 
 #### 4.2.1 Description and Priority
 
-Within the FoodSwipe™ application, users input specific criteria for the restaurants they are searching for. Users can enter keywords that best identify with what they want.
+In GitPic, users can enter the exact URL of the Reddit post they would like to obtain a picture from.
 
 #### 4.2.2 Stimulus/Response Sequences
 
-Users are given the opportunity to enter keywords that best identify with what they’re interested in, in terms of restaurants. This search option would include: vegan/vegetarian options, gluten-free, Halal/Kosher, specific allergies, etc.
+Application may have links to common photography subreddits or popular picture-restricted subreddits.
 
 
 5 Other Nonfunctional Requirements
@@ -161,34 +149,14 @@ Users are given the opportunity to enter keywords that best identify with what t
 5.1 Performance Requirements
 ------------------------
 
-FoodSwipe™ should be able to quickly receive and usefully relay information to the users, no delays if possible. Once the user has designated the category of food they are searching for, they will be able to swipe through the available options. The goal is for users to have no delay when searching for restaurants. The user will be able to view detailed and accurate information once a restraunt has been selected. The user experience should be smooth and up-to-date so that they can have the best experience possible.
+GitPic should be able to download the picture as quickly as the users' internet can allow. This program will be restricted by internet speed unless the user enters an archived website. In the case of an archived website, the program should come as close to possible to having a time-complexity of O(1), wherein the users' hardware read/write speeds being the restriction.
 
 5.2 Security Requirements
 ---------------------
 
-User authentication may be added at a later point in the project. However, the initial design does not require it.
+GitPic does not require authentication to scrape pictures from public subreddits. However, the user may need to log in to comment and retrieve pictures.
 
 5.3 Software Quality Attributes
 ---------------------------
 
-We’re developing an app with cross-compatibility because of react-native. The information from the restaurants will be coming from the restaurants themselves, so the info will be as accurate as they make it online. Reliability depends on internet connection. Testing will be done in small focus groups before a release. It will be available on Google Play so we can provide the link to people with Android phones. Our intention is to show our focus groups how to navigate throughout the application, however the developers for FoodSwipe™ have in their utmost priority to make the interface seem familiar, without the need of teaching users how to operate the application.
-
-6 Market Research
-================================
-
-6.1 Primary Market Research
----------------------------
-
-This includes research gauging what our audience was looking for in an app. 
-We included secondary market research under our References.
-
-![Alt text](/doc/InterestGraph.png)
-![Alt text](/doc/PrioritiesGraph.png)
-![Alt text](/doc/DistancePieChart.png)
-
-6.2 Secondary Market Research
----------------------------
-
-Restaurants have seen a serious rise since 2001, providing a much wider diversity for users, and a more intense need for users to choose what services them best. More information located in a news article [here](https://www.nytimes.com/2017/10/31/business/too-many-restaurants-wall-street.html).
-
-Online ordering provides a sense of control to the customers, increased order frequency, and contributed to savings of labor as cited [here](http://scholarship.sha.cornell.edu/cgi/viewcontent.cgi?article=1072&context=chrpubs).
+Our program should work seemlessly as long as the user selects posts that have pictures uploaded directly from Reddit. Posts that reroute to other photo websites like Imgur may cause problems. However, a feature to support third-party websites may be added in the future.
