@@ -1,4 +1,4 @@
-FoodSwipe
+GitPic
 ===================
 ###### Sammy Macrito, Andrew Littleton, Brandon Moy, Neha Patel, Kyle Lieu
 
