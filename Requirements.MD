@@ -27,9 +27,7 @@ GitPic
   - [5.1 Performance Requirements](#51-performance-requirements)
   - [5.2 Security Requirements](#52-security-requirements)
   - [5.3 Software Quality Attributes](#53-software-quality-attributes)
-- [6 Market Research](#6-market-research)
-  - [6.1 Primary Market Research](#61-primary-market-research)
-  - [6.2 Secondary Market Research](#62-secondary-market-research)
+
 
 1 Introduction
 ============
