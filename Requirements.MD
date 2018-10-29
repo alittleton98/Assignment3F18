@@ -21,7 +21,6 @@ GitPic
   - [3.1 User Interfaces](#31-user-interfaces)
   - [3.2 Software Interfaces](#32-software-interfaces)
 - [4 System Features](#4-system-features)
-  - [4.1 Swipe Function](#41-swipe-function)
   - [4.2 Criteria Matcher](#42-criteria-matcher)
 - [5 Other Nonfunctional Requirements](#5-other-nonfunctional-requirements)
   - [5.1 Performance Requirements](#51-performance-requirements)
@@ -117,17 +116,6 @@ Our user interface will be a simple UI with an entry box for the Reddit URL. It 
 
 4 System Features
 ===============
-
-4.1 Swipe Function
-----------------
-
-#### 4.1.1 Description and Priority
-
-The swipe function is of high priority for FoodSwipe™. After inputting their criteria, the swipe functions allows the users to determine their restaurants of choice.
-
-#### 4.1.2 Stimulus/Response Sequences
-
-The swipe function is dynamic to the user’s interactions. Users can swipe right or “thumbs up”(or swipe right) restaurants they do like, and swipe left or “thumbs down”(or swipe left) on restaurants that they don’t like, or they feel like does not match their criteria.
 
 4.2 Criteria Matcher
 ----------------
