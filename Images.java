@@ -7,16 +7,19 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import java.net.URL;
 
-public class DownloadImages{
+class DownloadImages{
     private static final String webSiteURL = "https://www.reddit.com/r/EarthPorn/comments/9t8r5o/massive_sunbeams_the_largest_ive_ever_seen/";
     private static final String folderPath = "C:/Users/Sammy/Desktop/School/COMP330/Assignment3F18";
 
     public static void main(String[] args){
         try{
-            Document doc = Jsoup.connect(webSiteURL).get(); 
+            Document doc = Jsoup.connect(webSiteURL).get();
             Elements img = doc.getElementsByTag("img");
             for(Element el : img){// for each el, get source (src) url
                 String src = el.absUrl("src"); 
@@ -33,7 +36,7 @@ public class DownloadImages{
         int indexName = src.lastIndexOf("/");// extract image name from src attribute
         
         if (indexName == src.length()){
-            src = src.subString(1,indexName);
+            src = src.substring(1,indexName);
         }
 
         indexName = src.lastIndexOf("/");
