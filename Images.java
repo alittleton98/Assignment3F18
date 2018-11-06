@@ -15,7 +15,7 @@ import java.net.URL;
 
 class DownloadImages{
     private static final String webSiteURL = "https://www.reddit.com/r/EarthPorn/comments/9t8r5o/massive_sunbeams_the_largest_ive_ever_seen/";
-    private static final String folderPath = "C:/Users/Sammy/Desktop/School/COMP330/Assignment3F18";
+    private static final String folderPath = System.getProperty("user.home")+"/Downloads/";
 
     public static void main(String[] args){
         try{
