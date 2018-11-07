@@ -14,7 +14,7 @@ import org.jsoup.select.Elements;
 import java.net.URL;
 
 class Images{
-    private static String webSiteURL = "https://www.reddit.com/r/EarthPorn/comments/9t8r5o/massive_sunbeams_the_largest_ive_ever_seen/"; //original source to scrap from-- TODO: Create UI to have an entry field that stores into this variable
+    private static String webSiteURL = "https://www.reddit.com/r/pics/comments/9uyyyx/my_little_farm_cottages_favorite_season_is_fall/"; //original source to scrap from-- TODO: Create UI to have an entry field that stores into this variable
     private static String folderPath = System.getProperty("user.home")+"/Downloads/"; //finds the users local downloads folder TODO: create a UI to store the folder path in this location
     // private because when you try to use these in an OutPutStream, they must be static... might make problems if we want to change the URL?
     public static void main(String[] args){

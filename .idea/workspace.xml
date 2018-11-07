@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cad05c7f-f798-4464-bfa0-406a1a1feeee" name="Default" comment="Minor additions and changes to GUI">
+    <list default="true" id="cad05c7f-f798-4464-bfa0-406a1a1feeee" name="Default" comment="Added object labels">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/Images.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,36 +71,41 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="135" />
-          <entry key="txt" value="34" />
+          <entry key="java" value="162" />
+          <entry key="txt" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="135" />
-          <entry key="PLAIN_TEXT" value="34" />
+          <entry key="JAVA" value="162" />
+          <entry key="PLAIN_TEXT" value="96" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Images.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            <state relative-caret-position="240">
+              <caret line="16" column="134" selection-start-line="16" selection-start-column="134" selection-end-line="16" selection-end-column="134" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="315">
+              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#835#836#0" expanded="true" />
+                <element signature="e#860#861#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,8 +119,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Images.java" />
         <option value="$PROJECT_DIR$/GUI.java" />
+        <option value="$PROJECT_DIR$/Images.java" />
       </list>
     </option>
   </component>
@@ -171,7 +176,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541611794862" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541612416387" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jsoup-1.11.3.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -264,7 +269,7 @@
       <option name="presentableId" value="Default" />
       <updated>1541353016402</updated>
       <workItem from="1541561800162" duration="133000" />
-      <workItem from="1541611215064" duration="421000" />
+      <workItem from="1541611215064" duration="918000" />
     </task>
     <task id="LOCAL-00001" summary="Minor additions and changes to GUI">
       <created>1541611501455</created>
@@ -273,17 +278,31 @@
       <option name="project" value="LOCAL" />
       <updated>1541611501455</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added and changed a save location">
+      <created>1541611691947</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1541611691947</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added object labels">
+      <created>1541611829621</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1541611829621</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="554000" />
+    <option name="totallyTimeSpent" value="1051000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="629" y="23" width="1542" height="1257" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.182" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.182" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -296,7 +315,7 @@
       <window_info id="simpleUML" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32961375" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32961375" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -330,20 +349,27 @@
       <path value="$PROJECT_DIR$/jsoup" />
     </ignored-roots>
     <MESSAGE value="Minor additions and changes to GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor additions and changes to GUI" />
+    <MESSAGE value="Added and changed a save location" />
+    <MESSAGE value="Added object labels" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added object labels" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Images.java">
+    <entry file="file://$PROJECT_DIR$/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="315">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUI.java">
+    <entry file="file://$PROJECT_DIR$/Images.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="240">
+          <caret line="16" column="134" selection-start-line="16" selection-start-column="134" selection-end-line="16" selection-end-column="134" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
