@@ -13,7 +13,7 @@ import org.jsoup.select.Elements;
 
 import java.net.URL;
 
-class DownloadImages{
+class Images{
     private static final String webSiteURL = "https://www.reddit.com/r/EarthPorn/comments/9t8r5o/massive_sunbeams_the_largest_ive_ever_seen/";
     private static final String folderPath = "C:/Users/Sammy/Desktop/School/COMP330/Assignment3F18";
 
@@ -28,7 +28,7 @@ class DownloadImages{
                 }
             } catch(IOException ex){
                 System.out.println("error.");
-                Logger.getLogger(DownloadImages.class.getName()).log(Level.SEVERE,null,ex);
+                Logger.getLogger(Images.class.getName()).log(Level.SEVERE,null,ex);
             }
         }
     private static void getImages(String src) throws IOException{
