@@ -18,7 +18,8 @@ public class GUI extends JFrame{
             "Downloads",
             "Desktop",
             "Documents",
-            "User Root"
+            "Pictures",
+            "Root"
     };
     JComboBox cb = new JComboBox(choices);
 
