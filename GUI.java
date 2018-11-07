@@ -21,6 +21,8 @@ public class GUI extends JFrame{
             "User Root"
     };
     JComboBox cb = new JComboBox(choices);
+
+    JButton r=new JButton("Begin Image Scrape");
     
     public static void main(String[] args){
         new GUI();
@@ -34,6 +36,7 @@ public class GUI extends JFrame{
         p.add(t);
         p.add(cb);
         p.add(l);
+        p.add(r);
         add(p);
         setVisible(true);
     }
