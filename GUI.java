@@ -10,7 +10,7 @@ import javax.swing.JComboBox;
 public class GUI extends JFrame{
 
     JPanel p=new JPanel();
-    JLabel b=new JLabel("Please Paste a Reddit URL Bellow");
+    JLabel b=new JLabel("Please Paste a Reddit URL Below");
     JTextField t=new JTextField("",45);
 
     JLabel l=new JLabel("Choose a save location");
@@ -23,6 +23,8 @@ public class GUI extends JFrame{
     JComboBox cb = new JComboBox(choices);
 
     JButton r=new JButton("Begin Image Scrape");
+    JButton exitButton = new JButton("Exit");
+    JButton restartButton = new JButton("Clear");
     
     public static void main(String[] args){
         new GUI();
@@ -30,13 +32,15 @@ public class GUI extends JFrame{
 
     public GUI(){
         super("Reddit Image Scraper");
-        setSize(600,600);
+        setSize(625,600);
         setResizable(true);
         p.add(b);
         p.add(t);
-        p.add(cb);
         p.add(l);
+        p.add(cb);
         p.add(r);
+        p.add(restartButton);
+        p.add(exitButton);
         add(p);
         setVisible(true);
     }
