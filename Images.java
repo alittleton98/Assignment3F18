@@ -21,7 +21,7 @@ class Images{
         try{
             Document doc = Jsoup.connect(webSiteURL).get(); //connects to website and makes it a document (basically a file)
             Elements img = doc.getElementsByTag("img"); //finds all elements in the new doc that match the "img" tag
-            for(Element el : img){// for each el, get source (src) url
+            for(Element el : img){// for each element, get source (src) url
                 String src = el.absUrl("src"); //gets the "absolute" URL of the SRC, AKA the online host of the picture
                 System.out.println("image found"); //prints when image is found
                 getImages(src); //calls getImage method with the SRC as the source for the picture for us to obtain
