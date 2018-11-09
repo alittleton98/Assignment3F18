@@ -21,7 +21,7 @@ GitPic
   - [3.1 User Interfaces](#31-user-interfaces)
   - [3.2 Software Interfaces](#32-software-interfaces)
 - [4 System Features](#4-system-features)
-  - [4.2 Criteria Matcher](#42-criteria-matcher)
+  - [4.1 Criteria Matcher](#42-criteria-matcher)
 - [5 Other Nonfunctional Requirements](#5-other-nonfunctional-requirements)
   - [5.1 Performance Requirements](#51-performance-requirements)
   - [5.2 Security Requirements](#52-security-requirements)
