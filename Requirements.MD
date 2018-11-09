@@ -117,14 +117,14 @@ Our user interface will be a simple UI with an entry box for the Reddit URL. It 
 4 System Features
 ===============
 
-4.2 Criteria Matcher
+4.1 Criteria Matcher
 ----------------
 
-#### 4.2.1 Description and Priority
+#### 4.1.1 Description and Priority
 
 In GitPic, users can enter the exact URL of the Reddit post they would like to obtain a picture from.
 
-#### 4.2.2 Stimulus/Response Sequences
+#### 4.1.2 Stimulus/Response Sequences
 
 Application may have links to common photography subreddits or popular picture-restricted subreddits.
 
