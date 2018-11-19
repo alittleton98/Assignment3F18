@@ -5,6 +5,10 @@ import javax.swing.JTextField;
 import javax.swing.JTextArea;
 import javax.swing.JLabel;
 import javax.swing.JComboBox;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.concurrent.TimeUnit;
 
 
 class GUI extends JFrame{
@@ -21,10 +25,10 @@ class GUI extends JFrame{
             "Root",
     };
 
-    JComboBox choicesButton = new JComboBox(choices);
-    JButton beginButton=new JButton("Begin Image Scrape");
-    JButton restartButton = new JButton("Clear");
-    JButton exit = new JButton("Exit");
+    public JComboBox choicesButton = new JComboBox(choices);
+    public JButton beginButton=new JButton("Begin Image Scrape");
+    public JButton restartButton = new JButton("Clear");
+    public JButton exit = new JButton("Exit");
 
     public static void main(String[] args){
         new GUI();
@@ -43,5 +47,13 @@ class GUI extends JFrame{
         panel.add(exit);
         add(panel);
         setVisible(true);
+
+        beginButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e){
+                Images I = new Images();
+                I.main();
+            }
+        });
     }
 }
