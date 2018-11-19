@@ -62,7 +62,15 @@ class GUI extends JFrame{
                 System.exit(0);
             }
         });
-
-        //public void actionPerformed(ActionEvent e){}
+        choicesButton.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                JComboBox cb = (JComboBox)e.getSource();
+                String choices = (String)cb.getSelectedItem();
+                if((choices).equals("Downloads")){
+                    Images I = new Images();
+                    I.path();
+                }
+            }
+        });
     }
 }

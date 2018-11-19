@@ -31,6 +31,9 @@ class Images{
                 Logger.getLogger(Images.class.getName()).log(Level.SEVERE,null,ex);
             }
         }
+        public static void path (){
+
+        }
     private static void getImages(String src) throws IOException{
         //String folder = null; //local folder path(not using right now)
         int indexName = src.lastIndexOf("/");// extract image name from src attribute EX: https://www.youtube.com/ <-- will stop at last forward slash and get the index of the last "/"
