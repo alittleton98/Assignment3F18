@@ -32,7 +32,8 @@ class Images{
             }
         }
         public static void path (){
-
+            String home = System.getProperty("user.home");
+            File file = new File(home+"/Downloads/" );
         }
     private static void getImages(String src) throws IOException{
         //String folder = null; //local folder path(not using right now)
