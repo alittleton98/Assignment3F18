@@ -55,5 +55,14 @@ class GUI extends JFrame{
                 I.main();
             }
         });
+
+        exit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e){
+                System.exit(0);
+            }
+        });
+
+        //public void actionPerformed(ActionEvent e){}
     }
 }
