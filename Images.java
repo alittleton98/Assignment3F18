@@ -21,18 +21,12 @@ class Images{
         try{
             Document doc = Jsoup.connect(webSiteURL).get(); //connects to website and makes it a document (basically a file)
             Elements className = doc.getElementsByTag("img"); //finds all elements in the new doc that match the "img" tag
-            //System.out.println(className);
-           /* Element el = className;
-            String src = doc.absUrl("src");
-            System.out.println("image found");
-            System.out.println(src);*/
-           // getImages(src);
+
             for(Element el : className){// for each element, get source (src) url
                 String src = el.absUrl("src"); //gets the "absolute" URL of the SRC, AKA the online host of the picture
 
-               // System.out.println("image found"); //prints when image is found
-                if(el.hasClass("_2_tDEnGMLxpM6uOa2kaDB3")){
-                    System.out.println("image found");
+                if(el.hasClass("_2_tDEnGMLxpM6uOa2kaDB3")){//if the img has class "_2_tDEnGMLxpM6uOa2kaDB3" it is the post-content section. This is exclusive to reddit's CSS
+                    System.out.println("image found");//prints when image is found
                     getImages(src); //calls getImage method with the SRC as the source for the picture for us to obtain
                     }
 
@@ -52,15 +46,15 @@ class Images{
         int indexName = src.lastIndexOf("/");// extract image name from src attribute EX: https://www.youtube.com/ <-- will stop at last forward slash and get the index of the last "/"
         //System.out.println(indexName);
         if (indexName == src.length()){
-            src = src.substring(1,indexName);
+            src = src.substring(1,indexName);//creates string from start of URL to end
         }
 
         indexName = src.lastIndexOf("/");
         //System.out.println(indexName);
-        String name = src.substring(indexName,src.length());
+        String name = src.substring(indexName,src.length());//creates string from / (beginning) to the end of the string's length
         //must open stream for URL
-        URL url = new URL(src);
-        long size  = url.openConnection().getContentLength();
+        URL url = new URL(src); //creates new URL
+        long size  = url.openConnection().getContentLength();//
         System.out.println(name + " " + size);
         InputStream in = url.openStream(); //reads the bytes from our stream (website)
         // The openStream() method returns a java.io.InputStream object, so reading from a URL is as easy as reading from an input stream. (from java documentation https://docs.oracle.com/javase/tutorial/networking/urls/readingURL.html)
