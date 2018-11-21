@@ -17,7 +17,7 @@ class Images{
     private static String webSiteURL = "https://www.reddit.com/r/pics/comments/9ytwct/photo_of_the_day/"; //original source to scrap from-- TODO: Create UI to have an entry field that stores into this variable
     private static String folderPath = System.getProperty("user.home")+"/Downloads/"; //finds the users local downloads folder TODO: create a UI to store the folder path in this location
     // private because when you try to use these in an OutPutStream, they must be static... might make problems if we want to change the URL?
-    public static void main(String args[]){
+    public static void main(){
         try{
             Document doc = Jsoup.connect(webSiteURL).get(); //connects to website and makes it a document (basically a file)
             Elements className = doc.getElementsByTag("img"); //finds all elements in the new doc that match the "img" tag
@@ -51,7 +51,7 @@ class Images{
 
         indexName = src.lastIndexOf("/");
         //System.out.println(indexName);
-        String name = src.substring(indexName,src.length());//creates string from / (beginning) to the end of the string's length
+        String name = src.substring(indexName);//creates string from / (beginning) to the end of the string's length
         //must open stream for URL
         URL url = new URL(src); //creates new URL
         long size  = url.openConnection().getContentLength();//

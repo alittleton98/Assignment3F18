@@ -27,7 +27,7 @@ class GUI extends JFrame{
 
     public JComboBox choicesButton = new JComboBox(choices);
     public JButton beginButton=new JButton("Begin Image Scrape");
-    public JButton restartButton = new JButton("Clear");
+    public JButton clearButton = new JButton("Clear");
     public JButton exit = new JButton("Exit");
 
     public static void main(String[] args){
@@ -43,30 +43,56 @@ class GUI extends JFrame{
         panel.add(saveLocation);
         panel.add(choicesButton);
         panel.add(beginButton);
-        panel.add(restartButton);
+        panel.add(clearButton);
         panel.add(exit);
         add(panel);
         setVisible(true);
-
+        //CLEAR URL BAR
+        clearButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e){
+                textEntry.setText("");
+            }
+        });
+        //BEGIN SCRAPE
         beginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e){
                 Images I = new Images();
-               // I.main();
+                I.main();
             }
         });
-
+        //EXIT PROGRAM
         exit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e){
                 System.exit(0);
             }
         });
+        //DIRECTORY CHOICES
         choicesButton.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e){
-                JComboBox cb = (JComboBox)e.getSource();
-                String choices = (String)cb.getSelectedItem();
-                if((choices).equals("Downloads")){
+            public void actionPerformed(ActionEvent e) {
+                JComboBox cb = (JComboBox) e.getSource();
+                String choices = (String) cb.getSelectedItem();
+                if ((choices).equals("Downloads")) {
+                    Images I = new Images();
+                    I.path();
+                }
+
+                if ((choices).equals("Desktop")) {
+                    Images I = new Images();
+                    I.path();
+                }
+
+                if ((choices).equals("Documents")) {
+                    Images I = new Images();
+                    I.path();
+                }
+                if ((choices).equals("Pictures")) {
+                    Images I = new Images();
+                    I.path();
+                }
+                if ((choices).equals("Root")) {
                     Images I = new Images();
                     I.path();
                 }
