@@ -52,7 +52,7 @@ class GUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e){
                 Images I = new Images();
-                I.main();
+               // I.main();
             }
         });
 
