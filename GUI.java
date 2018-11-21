@@ -17,7 +17,7 @@ class GUI extends JFrame{
     JPanel panel=new JPanel();
     JLabel instruction=new JLabel("Please Paste a Reddit URL Below");
     JTextField textEntry=new JTextField("",45);
-
+    //ADD CHOICES TO DROPDOWN
     JLabel saveLocation=new JLabel("Save location:");
     String choices[] = {
             "Downloads",
@@ -26,16 +26,16 @@ class GUI extends JFrame{
             "Pictures",
             "Root",
     };
-
+    //ADD BUTTONS
     public JComboBox choicesButton = new JComboBox(choices);
     public JButton beginButton=new JButton("Begin Image Scrape");
     public JButton clearButton = new JButton("Clear");
     public JButton exit = new JButton("Exit");
-
+    //INIT GUI
     public static void main(String[] args){
         new GUI();
     }
-
+    //CREATE GUI
     public GUI(){
         super("Reddit Image Scraper");
         setSize(625,600);
@@ -50,52 +50,52 @@ class GUI extends JFrame{
         add(panel);
         setVisible(true);
         //CLEAR URL BAR
-        clearButton.addActionListener(new ActionListener() {
+        clearButton.addActionListener(new ActionListener() {// add event listener to clearButton
             @Override
             public void actionPerformed(ActionEvent e){
-                textEntry.setText("");
+                textEntry.setText(""); //clear text field
             }
         });
         //BEGIN SCRAPE
-        beginButton.addActionListener(new ActionListener() {
+        beginButton.addActionListener(new ActionListener() {// add event listener to beginButton
             @Override
             public void actionPerformed(ActionEvent e){
                 webSiteURL = textEntry.getText();
                 Images I = new Images();
-                I.main(webSiteURL, folderPath);
+                I.main(webSiteURL, folderPath);//pass webSiteURL, folderPath to Images.java, let Images.java do the rest
             }
         });
         //EXIT PROGRAM
-        exit.addActionListener(new ActionListener() {
+        exit.addActionListener(new ActionListener() {//add event listener to exit
             @Override
             public void actionPerformed(ActionEvent e){
-                System.exit(0);
+                System.exit(0);//close
             }
         });
         //DIRECTORY CHOICES
-        choicesButton.addActionListener(new ActionListener(){
+        choicesButton.addActionListener(new ActionListener(){// add event listener to choicesButton
             public void actionPerformed(ActionEvent e) {
-                JComboBox cb = (JComboBox) e.getSource();
-                String choices = (String) cb.getSelectedItem();
-                if ((choices).equals("Downloads")) {
+                JComboBox cb = (JComboBox) e.getSource(); //fetch user choice from drop down
+                String choices = (String) cb.getSelectedItem(); //set choices equal to selected item in JComboBox cb... Updates live!
+                if ((choices).equals("Downloads")) { // if choice is downloads, get downloads location and set as folderPath
                     folderPath = System.getProperty("user.home")+"/Downloads/";
                     System.out.println(folderPath);
                 }
 
-                if ((choices).equals("Desktop")) {
+                if ((choices).equals("Desktop")) {// if choice is desktop, get desktop location and set as folderPath
                     folderPath = System.getProperty("user.home")+"/Desktop/";
                     System.out.println(folderPath);
                 }
 
-                if ((choices).equals("Documents")) {
+                if ((choices).equals("Documents")) {// if choice is documents, get documents location and set as folderPath
                     folderPath = System.getProperty("user.home")+"/Documents/";
                     System.out.println(folderPath);
                 }
-                if ((choices).equals("Pictures")) {
+                if ((choices).equals("Pictures")) {// if choice is pictures, get pictures location and set as folderPath
                     folderPath = System.getProperty("user.home")+"/Pictures/";
                     System.out.println(folderPath);
                 }
-                if ((choices).equals("Root")) {
+                if ((choices).equals("Root")) {// if choice is root, get root location and set as folderPath
                     folderPath = System.getProperty("user.home")+"/Root/";
                     System.out.println(folderPath);
                 }
