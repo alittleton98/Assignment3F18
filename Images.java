@@ -14,11 +14,12 @@ import org.jsoup.select.Elements;
 import java.net.URL;
 
 class Images{
-    private static String webSiteURL = "https://www.reddit.com/r/pics/comments/9ytwct/photo_of_the_day/"; //original source to scrap from-- TODO: Create UI to have an entry field that stores into this variable
-    private static String folderPath = System.getProperty("user.home")+"/Downloads/"; //finds the users local downloads folder TODO: create a UI to store the folder path in this location
+    //private static String webSiteURL = "https://www.reddit.com/r/pics/comments/9ytwct/photo_of_the_day/"; //original source to scrap from-- TODO: Create UI to have an entry field that stores into this variable
+    //private static String folderPath = System.getProperty("user.home")+"/Downloads/"; //finds the users local downloads folder TODO: create a UI to store the folder path in this location
     // private because when you try to use these in an OutPutStream, they must be static... might make problems if we want to change the URL?
-    public static void main(){
+    public static void main(String webSiteURL, String folderPath){
         try{
+
             Document doc = Jsoup.connect(webSiteURL).get(); //connects to website and makes it a document (basically a file)
             Elements className = doc.getElementsByTag("img"); //finds all elements in the new doc that match the "img" tag
 
@@ -27,7 +28,7 @@ class Images{
 
                 if(el.hasClass("_2_tDEnGMLxpM6uOa2kaDB3")){//if the img has class "_2_tDEnGMLxpM6uOa2kaDB3" it is the post-content section. This is exclusive to reddit's CSS
                     System.out.println("image found");//prints when image is found
-                    getImages(src); //calls getImage method with the SRC as the source for the picture for us to obtain
+                    getImages(src, folderPath); //calls getImage method with the SRC as the source for the picture for us to obtain
                     }
 
                 }
@@ -37,12 +38,10 @@ class Images{
                 Logger.getLogger(Images.class.getName()).log(Level.SEVERE,null,ex);
             }
         }
-        public static void path (){
-            String home = System.getProperty("user.home");
-            File file = new File(home+"/Downloads/" );
+        public static void path (String choice){
+            choice = System.getProperty("user.home");
         }
-    private static void getImages(String src) throws IOException{
-        //String folder = null; //local folder path(not using right now)
+    private static void getImages(String src, String folderPath) throws IOException{
         int indexName = src.lastIndexOf("/");// extract image name from src attribute EX: https://www.youtube.com/ <-- will stop at last forward slash and get the index of the last "/"
         //System.out.println(indexName);
         if (indexName == src.length()){

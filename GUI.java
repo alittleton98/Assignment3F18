@@ -12,6 +12,8 @@ import java.util.concurrent.TimeUnit;
 
 
 class GUI extends JFrame{
+    String webSiteURL;
+    String folderPath;
     JPanel panel=new JPanel();
     JLabel instruction=new JLabel("Please Paste a Reddit URL Below");
     JTextField textEntry=new JTextField("",45);
@@ -58,8 +60,9 @@ class GUI extends JFrame{
         beginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e){
+                webSiteURL = textEntry.getText();
                 Images I = new Images();
-                I.main();
+                I.main(webSiteURL, folderPath);
             }
         });
         //EXIT PROGRAM
@@ -75,26 +78,26 @@ class GUI extends JFrame{
                 JComboBox cb = (JComboBox) e.getSource();
                 String choices = (String) cb.getSelectedItem();
                 if ((choices).equals("Downloads")) {
-                    Images I = new Images();
-                    I.path();
+                    folderPath = System.getProperty("user.home")+"/Downloads/";
+                    System.out.println(folderPath);
                 }
 
                 if ((choices).equals("Desktop")) {
-                    Images I = new Images();
-                    I.path();
+                    folderPath = System.getProperty("user.home")+"/Desktop/";
+                    System.out.println(folderPath);
                 }
 
                 if ((choices).equals("Documents")) {
-                    Images I = new Images();
-                    I.path();
+                    folderPath = System.getProperty("user.home")+"/Documents/";
+                    System.out.println(folderPath);
                 }
                 if ((choices).equals("Pictures")) {
-                    Images I = new Images();
-                    I.path();
+                    folderPath = System.getProperty("user.home")+"/Pictures/";
+                    System.out.println(folderPath);
                 }
                 if ((choices).equals("Root")) {
-                    Images I = new Images();
-                    I.path();
+                    folderPath = System.getProperty("user.home")+"/Root/";
+                    System.out.println(folderPath);
                 }
             }
         });
