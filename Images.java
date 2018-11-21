@@ -14,19 +14,30 @@ import org.jsoup.select.Elements;
 import java.net.URL;
 
 class Images{
-    private static String webSiteURL = "https://www.reddit.com/r/pics/comments/9uyyyx/my_little_farm_cottages_favorite_season_is_fall/"; //original source to scrap from-- TODO: Create UI to have an entry field that stores into this variable
+    private static String webSiteURL = "https://www.reddit.com/r/pics/comments/9ytwct/photo_of_the_day/"; //original source to scrap from-- TODO: Create UI to have an entry field that stores into this variable
     private static String folderPath = System.getProperty("user.home")+"/Downloads/"; //finds the users local downloads folder TODO: create a UI to store the folder path in this location
     // private because when you try to use these in an OutPutStream, they must be static... might make problems if we want to change the URL?
     public static void main(String args[]){
         try{
             Document doc = Jsoup.connect(webSiteURL).get(); //connects to website and makes it a document (basically a file)
-            Elements img = doc.getElementsByTag("img"); //finds all elements in the new doc that match the "img" tag
-            System.out.println(img);
-            for(Element el : img){// for each element, get source (src) url
+            Elements className = doc.getElementsByTag("img"); //finds all elements in the new doc that match the "img" tag
+            //System.out.println(className);
+           /* Element el = className;
+            String src = doc.absUrl("src");
+            System.out.println("image found");
+            System.out.println(src);*/
+           // getImages(src);
+            for(Element el : className){// for each element, get source (src) url
                 String src = el.absUrl("src"); //gets the "absolute" URL of the SRC, AKA the online host of the picture
-                System.out.println("image found"); //prints when image is found
-                getImages(src); //calls getImage method with the SRC as the source for the picture for us to obtain
+
+               // System.out.println("image found"); //prints when image is found
+                if(el.hasClass("_2_tDEnGMLxpM6uOa2kaDB3")){
+                    System.out.println("image found");
+                    getImages(src); //calls getImage method with the SRC as the source for the picture for us to obtain
+                    }
+
                 }
+
             } catch(IOException ex){ //if no pic is found, throw exception and log it as severe failure
                 System.out.println("error.");
                 Logger.getLogger(Images.class.getName()).log(Level.SEVERE,null,ex);
@@ -39,12 +50,13 @@ class Images{
     private static void getImages(String src) throws IOException{
         //String folder = null; //local folder path(not using right now)
         int indexName = src.lastIndexOf("/");// extract image name from src attribute EX: https://www.youtube.com/ <-- will stop at last forward slash and get the index of the last "/"
-        
+        //System.out.println(indexName);
         if (indexName == src.length()){
             src = src.substring(1,indexName);
         }
 
         indexName = src.lastIndexOf("/");
+        //System.out.println(indexName);
         String name = src.substring(indexName,src.length());
         //must open stream for URL
         URL url = new URL(src);

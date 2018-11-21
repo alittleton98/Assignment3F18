@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cad05c7f-f798-4464-bfa0-406a1a1feeee" name="Default" comment="Added object labels">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/Images.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,18 +103,19 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="112" />
+          <entry key="java" value="539" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="112" />
+          <entry key="JAVA" value="539" />
         </counts>
       </usages-collector>
     </session>
@@ -129,8 +125,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Images.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
-              <caret line="39" column="72" lean-forward="true" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
+            <state relative-caret-position="464">
+              <caret line="16" column="103" selection-start-line="16" selection-start-column="103" selection-end-line="16" selection-end-column="103" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,14 +137,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1109">
+            <state relative-caret-position="1421">
               <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#995#996#0" expanded="true" />
                 <element signature="e#1020#1021#0" expanded="true" />
-                <element signature="e#1764#1765#0" expanded="true" />
-                <element signature="e#1810#1811#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -212,8 +206,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -325,6 +319,7 @@
       <workItem from="1541611215064" duration="918000" />
       <workItem from="1542383010564" duration="9045000" />
       <workItem from="1542753619970" duration="2163000" />
+      <workItem from="1542762668341" duration="2753000" />
     </task>
     <task id="LOCAL-00001" summary="Minor additions and changes to GUI">
       <created>1541611501455</created>
@@ -379,12 +374,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11805000" />
+    <option name="totallyTimeSpent" value="14558000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="134" y="35" width="3706" height="2125" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06163626" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.062189054" />
       <window_info id="Structure" order="1" weight="0.24945533" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -397,14 +393,14 @@
       <window_info id="simpleUML" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991708" weight="0.33944955" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49889442" visible="true" weight="0.33925685" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4994472" weight="0.43241787" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50082916" side_tool="true" visible="true" weight="0.33944955" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4991708" weight="0.43241787" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5011056" side_tool="true" visible="true" weight="0.33925685" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4991708" weight="0.32703725" />
       <window_info anchor="bottom" id="Console" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4994472" weight="0.08015062" />
@@ -472,26 +468,24 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added object labels" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Images.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="103" selection-start-line="16" selection-start-column="103" selection-end-line="16" selection-end-column="103" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1109">
+        <state relative-caret-position="1421">
           <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#995#996#0" expanded="true" />
             <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1764#1765#0" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Images.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="39" column="72" lean-forward="true" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
