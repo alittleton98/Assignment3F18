@@ -57,7 +57,7 @@ class Images{
         System.out.println(name + " " + size);
         InputStream in = url.openStream(); //reads the bytes from our stream (website)
         // The openStream() method returns a java.io.InputStream object, so reading from a URL is as easy as reading from an input stream. (from java documentation https://docs.oracle.com/javase/tutorial/networking/urls/readingURL.html)
-        OutputStream out = new BufferedOutputStream(new FileOutputStream(folderPath + name)); // bufferedoutputstream allows us to write to the computer without calling the underlying system byte-per-byte
+        OutputStream out = new BufferedOutputStream(new FileOutputStream(folderPath + name + ".jpg")); // bufferedoutputstream allows us to write to the computer without calling the underlying system byte-per-byte
         
         for(int b; (b = in.read()) != -1;){ // for all pictures, write them to output file
             out.write(b); // writes to folder path
