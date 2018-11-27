@@ -20,6 +20,7 @@ class GUI extends JFrame{
     //ADD CHOICES TO DROPDOWN
     JLabel saveLocation=new JLabel("Save location:");
     String choices[] = {
+            "Choose Location",
             "Downloads",
             "Desktop",
             "Documents",
