@@ -97,7 +97,7 @@ class GUI extends JFrame{
                     System.out.println(folderPath);
                 }
                 if ((choices).equals("Root")) {// if choice is root, get root location and set as folderPath
-                    folderPath = System.getProperty("user.home")+"/Root/";
+                    folderPath = System.getProperty("user.home")+"/";
                     System.out.println(folderPath);
                 }
             }
