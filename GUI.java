@@ -8,13 +8,12 @@ import javax.swing.JComboBox;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.concurrent.TimeUnit;
-
 
 class GUI extends JFrame{
     String webSiteURL;
     String folderPath;
     JPanel panel=new JPanel();
+
     JLabel instruction=new JLabel("Please Paste a Reddit URL Below");
     JTextField textEntry=new JTextField("",45);
     //ADD CHOICES TO DROPDOWN
@@ -39,7 +38,7 @@ class GUI extends JFrame{
     //CREATE GUI
     public GUI(){
         super("Reddit Image Scraper");
-        setSize(625,600);
+        setSize(625,300);
         setResizable(true);
         panel.add(instruction);
         panel.add(textEntry);
@@ -49,6 +48,7 @@ class GUI extends JFrame{
         panel.add(clearButton);
         panel.add(exit);
         add(panel);
+
         setVisible(true);
         //CLEAR URL BAR
         clearButton.addActionListener(new ActionListener() {// add event listener to clearButton
@@ -102,5 +102,6 @@ class GUI extends JFrame{
                 }
             }
         });
+
     }
 }

@@ -11,9 +11,17 @@ import org.jsoup.nodes.Document;//document is basically the website made into a 
 import org.jsoup.nodes.Element;//elements within the document, like pics or sources
 import org.jsoup.select.Elements;
 
+import java.io.File;
+import java.io.IOException;
+import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import java.net.URL;
 
 class Images{
+
     //private static String webSiteURL = "https://www.reddit.com/r/pics/comments/9ytwct/photo_of_the_day/"; //original source to scrap from-- TODO: Create UI to have an entry field that stores into this variable
     //private static String folderPath = System.getProperty("user.home")+"/Downloads/"; //finds the users local downloads folder TODO: create a UI to store the folder path in this location
     // private because when you try to use these in an OutPutStream, they must be static... might make problems if we want to change the URL?
@@ -37,6 +45,7 @@ class Images{
                 System.out.println("error.");
                 Logger.getLogger(Images.class.getName()).log(Level.SEVERE,null,ex);
             }
+
         }
         public static void path (String choice){
             choice = System.getProperty("user.home");
@@ -62,9 +71,17 @@ class Images{
         for(int b; (b = in.read()) != -1;){ // for all pictures, write them to output file
             out.write(b); // writes to folder path
         }
+        try {
+            BufferedImage img = ImageIO.read(new File(folderPath + name + ".jpg"));
+            ImageIcon icon = new ImageIcon(img);
+            JLabel label = new JLabel(icon);
+            JOptionPane.showMessageDialog(null, label);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         out.close(); //close Streams to avoid memory leaks
         in.close();
+    }
 
-    } 
 }
     
