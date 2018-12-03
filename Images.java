@@ -18,16 +18,6 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import java.net.URL;
-import java.io.FileInputStream;
-
-import java.io.FileNotFoundException;
-
-import java.io.IOException;
-
-
-
-import javax.imageio.ImageIO;
 
 class Images{
 
@@ -39,17 +29,15 @@ class Images{
 
             Document doc = Jsoup.connect(webSiteURL).get(); //connects to website and makes it a document (basically a file)
             Elements className = doc.getElementsByTag("img"); //finds all elements in the new doc that match the "img" tag
-
+            String title = doc.title();
             for(Element el : className){// for each element, get source (src) url
                 String src = el.absUrl("src"); //gets the "absolute" URL of the SRC, AKA the online host of the picture
 
                 if(el.hasClass("_2_tDEnGMLxpM6uOa2kaDB3")){//if the img has class "_2_tDEnGMLxpM6uOa2kaDB3" it is the post-content section. This is exclusive to reddit's CSS
                     System.out.println("image found");//prints when image is found
-                    getImages(src, folderPath); //calls getImage method with the SRC as the source for the picture for us to obtain
+                    getImages(src, folderPath, title); //calls getImage method with the SRC as the source for the picture for us to obtain
                 }
-
             }
-
         } catch(IOException ex){ //if no pic is found, throw exception and log it as severe failure
             System.out.println("error.");
             Logger.getLogger(Images.class.getName()).log(Level.SEVERE,null,ex);
@@ -59,35 +47,25 @@ class Images{
     public static void path (String choice){
         choice = System.getProperty("user.home");
     }
-    private static void getImages(String src, String folderPath) throws IOException{
+    private static void getImages(String src, String folderPath, String title) throws IOException{
         int indexName = src.lastIndexOf("/");// extract image name from src attribute EX: https://www.youtube.com/ <-- will stop at last forward slash and get the index of the last "/"
         //System.out.println(indexName);
         if (indexName == src.length()){
             src = src.substring(1,indexName);//creates string from start of URL to end
-
         }
 
         indexName = src.lastIndexOf("/");
-        //System.out.println(indexName);
         String name = src.substring(indexName);//creates string from / (beginning) to the end of the string's length
         String testChange;
-        if(name.endsWith(".jpg") && name.contains(".jpg")){
-            name = src.substring(indexName);
-            testChange = "not changed .jpg";
-        }
-        else if (name.endsWith(".png") && name.contains(".png")){
-            name = src.substring(indexName);
-            testChange = "not changed .png";
+        if (name.contains("jpg")){
+            name = title + ".jpg";
+            testChange = "jpg";
         }
         else if (name.contains("png")){
-            name = src.substring(indexName);
-            name = name + ".png";
-            testChange = "changed with .png";
+            name = title + ".png";
+            testChange = "png";
         }
-        else{
-            name = src.substring(indexName);
-            name = name + ".jpg";
-            testChange = "changed with .jpg";
+        else{ testChange = "nothing";
         }
         System.out.println(testChange);
 

@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cad05c7f-f798-4464-bfa0-406a1a1feeee" name="Default" comment="Fixed double .jpg extension">
+    <list default="true" id="cad05c7f-f798-4464-bfa0-406a1a1feeee" name="Default" comment="Couple more extension fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/Images.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/Images.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/Images.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/Images.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -141,14 +147,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2092" />
-          <entry key="txt" value="79" />
+          <entry key="java" value="2609" />
+          <entry key="txt" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2092" />
-          <entry key="PLAIN_TEXT" value="79" />
+          <entry key="JAVA" value="2609" />
+          <entry key="PLAIN_TEXT" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -169,12 +175,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Images.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+            <state relative-caret-position="121">
+              <caret line="66" column="39" lean-forward="true" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2521#2522#0" expanded="true" />
-                <element signature="e#2577#2578#0" expanded="true" />
+                <element signature="e#2654#2655#0" expanded="true" />
+                <element signature="e#2710#2711#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -183,8 +189,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="65" column="33" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="33" />
+            <state relative-caret-position="504">
+              <caret line="66" column="45" lean-forward="true" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,8 +201,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/com/sun/imageio/plugins/png/PNGImageReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="1678" selection-start-line="1678" selection-end-line="1678" />
+            <state relative-caret-position="129">
+              <caret line="1574" column="52" lean-forward="true" selection-end-line="1703" />
             </state>
           </provider>
         </entry>
@@ -214,8 +220,8 @@
       <find>classname</find>
       <find>url</find>
       <find>doc</find>
-      <find>src</find>
       <find>websiteURL</find>
+      <find>src</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -291,7 +297,7 @@
     <property name="SearchEverywhereHistoryKey" value="UML&#9;PSI&#9;JAVA://sun.font.BidiUtils#NUMLEVELS" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543867999427" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543870332834" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jsoup-1.11.3.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -400,7 +406,7 @@
       <workItem from="1542753619970" duration="2163000" />
       <workItem from="1542762668341" duration="6524000" />
       <workItem from="1543626413001" duration="10311000" />
-      <workItem from="1543864947384" duration="2986000" />
+      <workItem from="1543864947384" duration="5158000" />
     </task>
     <task id="LOCAL-00001" summary="Minor additions and changes to GUI">
       <created>1541611501455</created>
@@ -465,11 +471,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543866477076</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Couple more extension fixes">
+      <created>1543868068494</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1543868068494</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31626000" />
+    <option name="totallyTimeSpent" value="33798000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -484,7 +497,7 @@
     <frame x="838" y="23" width="1210" height="1257" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10958904" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.10958904" />
       <window_info id="Structure" order="1" weight="0.24945533" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -519,6 +532,42 @@
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Database" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10958904" />
+      <window_info id="Structure" order="1" weight="0.24945533" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="DB Browser" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Project Explorer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info id="Job Explorer" order="9" />
+      <window_info id="simpleUML" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4970458" visible="true" weight="0.3390558" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4997236" weight="0.32956383" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49778885" weight="0.43241787" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5029542" side_tool="true" weight="0.3390558" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49806523" weight="0.32618025" />
+      <window_info anchor="bottom" id="Console" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49889442" weight="0.078969955" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -535,7 +584,8 @@
     <MESSAGE value="Added object labels" />
     <MESSAGE value="Program now displays the downloaded image" />
     <MESSAGE value="Fixed double .jpg extension" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed double .jpg extension" />
+    <MESSAGE value="Couple more extension fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Couple more extension fixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.desktop/sun/font/BidiUtils.java" />
@@ -552,31 +602,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/com/sun/imageio/plugins/png/PNGImageReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="1678" selection-start-line="1678" selection-end-line="1678" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="65" column="33" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="33" />
+        <state relative-caret-position="504">
+          <caret line="66" column="45" lean-forward="true" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/com/sun/imageio/plugins/png/PNGImageReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="1574" column="52" lean-forward="true" selection-end-line="1703" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Images.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+        <state relative-caret-position="121">
+          <caret line="66" column="39" lean-forward="true" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2521#2522#0" expanded="true" />
-            <element signature="e#2577#2578#0" expanded="true" />
+            <element signature="e#2654#2655#0" expanded="true" />
+            <element signature="e#2710#2711#0" expanded="true" />
           </folding>
         </state>
       </provider>
