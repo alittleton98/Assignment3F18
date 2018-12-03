@@ -37,42 +37,60 @@ class Images{
                 if(el.hasClass("_2_tDEnGMLxpM6uOa2kaDB3")){//if the img has class "_2_tDEnGMLxpM6uOa2kaDB3" it is the post-content section. This is exclusive to reddit's CSS
                     System.out.println("image found");//prints when image is found
                     getImages(src, folderPath); //calls getImage method with the SRC as the source for the picture for us to obtain
-                    }
-
                 }
 
-            } catch(IOException ex){ //if no pic is found, throw exception and log it as severe failure
-                System.out.println("error.");
-                Logger.getLogger(Images.class.getName()).log(Level.SEVERE,null,ex);
             }
 
+        } catch(IOException ex){ //if no pic is found, throw exception and log it as severe failure
+            System.out.println("error.");
+            Logger.getLogger(Images.class.getName()).log(Level.SEVERE,null,ex);
         }
-        public static void path (String choice){
-            choice = System.getProperty("user.home");
-        }
+
+    }
+    public static void path (String choice){
+        choice = System.getProperty("user.home");
+    }
     private static void getImages(String src, String folderPath) throws IOException{
         int indexName = src.lastIndexOf("/");// extract image name from src attribute EX: https://www.youtube.com/ <-- will stop at last forward slash and get the index of the last "/"
         //System.out.println(indexName);
         if (indexName == src.length()){
             src = src.substring(1,indexName);//creates string from start of URL to end
+
         }
 
         indexName = src.lastIndexOf("/");
         //System.out.println(indexName);
         String name = src.substring(indexName);//creates string from / (beginning) to the end of the string's length
+        String testChange;
+        if(name.endsWith(".jpg")){
+            name = src.substring(indexName);
+            testChange = "not changed .jpg";
+        }
+        else if (name.endsWith(".png")){
+            name = src.substring(indexName);
+            testChange = "";
+        }
+        else {
+            name = src.substring(indexName);
+            name = name + ".jpg";
+            testChange = "changed";
+        }
+        System.out.println(testChange);
+
         //must open stream for URL
         URL url = new URL(src); //creates new URL
         long size  = url.openConnection().getContentLength();//
-        System.out.println(name + " " + size);
+        //name = "Reddit Image";
+        System.out.println(name + " " + size + "kbs");
         InputStream in = url.openStream(); //reads the bytes from our stream (website)
         // The openStream() method returns a java.io.InputStream object, so reading from a URL is as easy as reading from an input stream. (from java documentation https://docs.oracle.com/javase/tutorial/networking/urls/readingURL.html)
-        OutputStream out = new BufferedOutputStream(new FileOutputStream(folderPath + name + ".jpg")); // bufferedoutputstream allows us to write to the computer without calling the underlying system byte-per-byte
-        
+        OutputStream out = new BufferedOutputStream(new FileOutputStream(folderPath + name)); // bufferedoutputstream allows us to write to the computer without calling the underlying system byte-per-byte
+
         for(int b; (b = in.read()) != -1;){ // for all pictures, write them to output file
             out.write(b); // writes to folder path
         }
         try {
-            BufferedImage img = ImageIO.read(new File(folderPath + name + ".jpg"));
+            BufferedImage img = ImageIO.read(new File(folderPath + name));
             ImageIcon icon = new ImageIcon(img);
             JLabel label = new JLabel(icon);
             JOptionPane.showMessageDialog(null, label);
@@ -84,4 +102,3 @@ class Images{
     }
 
 }
-    

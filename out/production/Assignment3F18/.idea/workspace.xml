@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cad05c7f-f798-4464-bfa0-406a1a1feeee" name="Default" comment="Added object labels">
-      <change beforePath="$PROJECT_DIR$/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.java" afterDir="false" />
+    <list default="true" id="cad05c7f-f798-4464-bfa0-406a1a1feeee" name="Default" comment="Program now displays the downloaded image">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/Images.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/Images.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -129,36 +131,77 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1221314358">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1491" />
+          <entry key="txt" value="46" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1491" />
+          <entry key="PLAIN_TEXT" value="46" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Scratch" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Images.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1331">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="475">
+              <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2306#2307#0" expanded="true" />
-                <element signature="e#2370#2371#0" expanded="true" />
+                <element signature="e#2521#2522#0" expanded="true" />
+                <element signature="e#2577#2578#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="55" column="21" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="55" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#2796#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1531">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+            <state relative-caret-position="-520">
+              <caret line="30" column="24" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#995#996#0" expanded="true" />
-                <element signature="e#1020#1021#0" expanded="true" />
-                <element signature="e#1557#1558#0" expanded="true" />
-                <element signature="e#1592#1593#0" expanded="true" />
-                <element signature="e#2060#2061#0" expanded="true" />
-                <element signature="e#2106#2107#0" expanded="true" />
+                <element signature="e#2187#2188#0" expanded="true" />
+                <element signature="e#2259#2260#0" expanded="true" />
+                <element signature="e#2890#2891#0" expanded="true" />
+                <element signature="e#2943#2944#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,6 +213,11 @@
     <findStrings>
       <find>i</find>
       <find>folderPath</find>
+      <find>println</find>
+      <find>name</find>
+      <find>label</find>
+      <find>begin</find>
+      <find>classname</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -178,8 +226,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Images.java" />
         <option value="$PROJECT_DIR$/GUI.java" />
+        <option value="$PROJECT_DIR$/Images.java" />
       </list>
     </option>
   </component>
@@ -190,9 +238,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="652" />
+    <option name="x" value="838" />
     <option name="y" value="23" />
-    <option name="width" value="1396" />
+    <option name="width" value="1210" />
     <option name="height" value="1257" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -224,19 +272,28 @@
               <item name="Assignment3F18" type="b2602c69:ProjectViewProjectNode" />
               <item name="Assignment3F18" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Assignment3F18" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="Assignment3F18" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="UML&#9;PSI&#9;JAVA://sun.font.BidiUtils#NUMLEVELS" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542769195121" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543864957573" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jsoup-1.11.3.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -344,6 +401,7 @@
       <workItem from="1542383010564" duration="9045000" />
       <workItem from="1542753619970" duration="2163000" />
       <workItem from="1542762668341" duration="6524000" />
+      <workItem from="1543626413001" duration="10311000" />
     </task>
     <task id="LOCAL-00001" summary="Minor additions and changes to GUI">
       <created>1541611501455</created>
@@ -394,11 +452,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542663309417</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Program now displays the downloaded image">
+      <created>1543633129415</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1543633129415</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18329000" />
+    <option name="totallyTimeSpent" value="28640000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -410,10 +475,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="134" y="35" width="3706" height="2125" extended-state="6" />
+    <frame x="838" y="23" width="1210" height="1257" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.062189054" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10787671" />
       <window_info id="Structure" order="1" weight="0.24945533" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -426,15 +491,15 @@
       <window_info id="simpleUML" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49751243" weight="0.33925685" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4970458" weight="0.3390558" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4997236" weight="0.32956383" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49778885" weight="0.43241787" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50248754" side_tool="true" visible="true" weight="0.33925685" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49806523" weight="0.3268713" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5029542" side_tool="true" weight="0.3390558" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49806523" weight="0.32618025" />
       <window_info anchor="bottom" id="Console" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49889442" weight="0.079698436" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
@@ -462,40 +527,43 @@
     <MESSAGE value="Minor additions and changes to GUI" />
     <MESSAGE value="Added and changed a save location" />
     <MESSAGE value="Added object labels" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added object labels" />
+    <MESSAGE value="Program now displays the downloaded image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program now displays the downloaded image" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.desktop/sun/font/BidiUtils.java">
+    <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.desktop/sun/font/BidiUtils.java" />
+    <entry file="file://$PROJECT_DIR$/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
+        <state relative-caret-position="-520">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2187#2188#0" expanded="true" />
+            <element signature="e#2259#2260#0" expanded="true" />
+            <element signature="e#2890#2891#0" expanded="true" />
+            <element signature="e#2943#2944#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="55" column="21" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="55" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#2796#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Images.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1331">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="475">
+          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2306#2307#0" expanded="true" />
-            <element signature="e#2370#2371#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1531">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1557#1558#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#2060#2061#0" expanded="true" />
-            <element signature="e#2106#2107#0" expanded="true" />
+            <element signature="e#2521#2522#0" expanded="true" />
+            <element signature="e#2577#2578#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -551,7 +619,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>11</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
