@@ -19,6 +19,15 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import java.net.URL;
+import java.io.FileInputStream;
+
+import java.io.FileNotFoundException;
+
+import java.io.IOException;
+
+
+
+import javax.imageio.ImageIO;
 
 class Images{
 
@@ -62,18 +71,23 @@ class Images{
         //System.out.println(indexName);
         String name = src.substring(indexName);//creates string from / (beginning) to the end of the string's length
         String testChange;
-        if(name.endsWith(".jpg")){
+        if(name.endsWith(".jpg") && name.contains(".jpg")){
             name = src.substring(indexName);
             testChange = "not changed .jpg";
         }
-        else if (name.endsWith(".png")){
+        else if (name.endsWith(".png") && name.contains(".png")){
             name = src.substring(indexName);
-            testChange = "";
+            testChange = "not changed .png";
         }
-        else {
+        else if (name.contains("png")){
+            name = src.substring(indexName);
+            name = name + ".png";
+            testChange = "changed with .png";
+        }
+        else{
             name = src.substring(indexName);
             name = name + ".jpg";
-            testChange = "changed";
+            testChange = "changed with .jpg";
         }
         System.out.println(testChange);
 
@@ -81,7 +95,7 @@ class Images{
         URL url = new URL(src); //creates new URL
         long size  = url.openConnection().getContentLength();//
         //name = "Reddit Image";
-        System.out.println(name + " " + size + "kbs");
+
         InputStream in = url.openStream(); //reads the bytes from our stream (website)
         // The openStream() method returns a java.io.InputStream object, so reading from a URL is as easy as reading from an input stream. (from java documentation https://docs.oracle.com/javase/tutorial/networking/urls/readingURL.html)
         OutputStream out = new BufferedOutputStream(new FileOutputStream(folderPath + name)); // bufferedoutputstream allows us to write to the computer without calling the underlying system byte-per-byte
@@ -90,6 +104,7 @@ class Images{
             out.write(b); // writes to folder path
         }
         try {
+            System.out.println(folderPath + name);
             BufferedImage img = ImageIO.read(new File(folderPath + name));
             ImageIcon icon = new ImageIcon(img);
             JLabel label = new JLabel(icon);
