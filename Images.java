@@ -55,15 +55,15 @@ class Images{
         }
         indexName = src.lastIndexOf("/");
         String name = src.substring(indexName);//creates string from / (beginning) to the end of the string's length
-        //String newTitle = title.substring(0, title.indexOf(" /"));
+        String newTitle = title.substring(0, title.indexOf(" :"));
         //newTitle = newTitle.replaceAll("[\\[\\]_:\"'`?;\\”0-9—;“()-/.,*! ]", "");
         String testChange;
         if (name.contains("jpg")){
-            name = title + ".jpg";
+            name = newTitle + ".jpg";
             testChange = "jpg";
         }
         else if (name.contains("png")){
-            name = title + ".png";
+            name = newTitle + ".png";
             testChange = "png";
         }
         else{ testChange = "nothing";

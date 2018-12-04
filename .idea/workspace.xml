@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cad05c7f-f798-4464-bfa0-406a1a1feeee" name="Default" comment="Program renames downloaded image to title">
+    <list default="true" id="cad05c7f-f798-4464-bfa0-406a1a1feeee" name="Default" comment="Fixed image writing bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/Images.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/Images.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -147,14 +146,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3057" />
-          <entry key="txt" value="166" />
+          <entry key="java" value="3079" />
+          <entry key="txt" value="189" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3056" />
-          <entry key="PLAIN_TEXT" value="166" />
+          <entry key="JAVA" value="3078" />
+          <entry key="PLAIN_TEXT" value="189" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -176,8 +175,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Images.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+            <state relative-caret-position="327">
+              <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2544#2545#0" expanded="true" />
@@ -190,8 +189,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="87" column="52" selection-start-line="87" selection-start-column="52" selection-end-line="87" selection-end-column="52" />
+            <state relative-caret-position="-520">
+              <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -234,6 +233,7 @@
       <find>url</find>
       <find>doc</find>
       <find>src</find>
+      <find>title</find>
       <find>websiteURL</find>
     </findStrings>
   </component>
@@ -256,9 +256,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="838" />
+    <option name="x" value="670" />
     <option name="y" value="23" />
-    <option name="width" value="1210" />
+    <option name="width" value="1378" />
     <option name="height" value="1257" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -311,7 +311,7 @@
     <property name="SearchEverywhereHistoryKey" value="UML&#9;PSI&#9;JAVA://sun.font.BidiUtils#NUMLEVELS" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543886133037" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543959532550" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jsoup-1.11.3.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -420,7 +420,7 @@
       <workItem from="1542753619970" duration="2163000" />
       <workItem from="1542762668341" duration="6524000" />
       <workItem from="1543626413001" duration="10311000" />
-      <workItem from="1543864947384" duration="12940000" />
+      <workItem from="1543864947384" duration="14139000" />
     </task>
     <task id="LOCAL-00001" summary="Minor additions and changes to GUI">
       <created>1541611501455</created>
@@ -499,11 +499,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543870507956</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fixed image writing bug">
+      <created>1543886207763</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1543886207763</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41580000" />
+    <option name="totallyTimeSpent" value="42779000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -515,7 +522,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="838" y="23" width="1210" height="1257" extended-state="0" />
+    <frame x="670" y="23" width="1378" height="1257" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.10958904" />
@@ -531,7 +538,7 @@
       <window_info id="simpleUML" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4970458" weight="0.3390558" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4970458" visible="true" weight="0.3390558" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -539,7 +546,7 @@
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49778885" weight="0.43241787" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5029542" side_tool="true" weight="0.3390558" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.49806523" visible="true" weight="0.32618025" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49806523" weight="0.32618025" />
       <window_info anchor="bottom" id="Console" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49889442" weight="0.078969955" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
@@ -609,7 +616,8 @@
     <MESSAGE value="Fixed double .jpg extension" />
     <MESSAGE value="Couple more extension fixes" />
     <MESSAGE value="Program renames downloaded image to title" />
-    <option name="LAST_COMMIT_MESSAGE" value="Program renames downloaded image to title" />
+    <MESSAGE value="Fixed image writing bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed image writing bug" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.desktop/sun/font/BidiUtils.java" />
@@ -635,8 +643,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="87" column="52" selection-start-line="87" selection-start-column="52" selection-end-line="87" selection-end-column="52" />
+        <state relative-caret-position="-520">
+          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -645,8 +653,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Images.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+        <state relative-caret-position="327">
+          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2544#2545#0" expanded="true" />
