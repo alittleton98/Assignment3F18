@@ -53,9 +53,10 @@ class Images{
         if (indexName == src.length()){
             src = src.substring(1,indexName);//creates string from start of URL to end
         }
-
         indexName = src.lastIndexOf("/");
         String name = src.substring(indexName);//creates string from / (beginning) to the end of the string's length
+        //String newTitle = title.substring(0, title.indexOf(" /"));
+        //newTitle = newTitle.replaceAll("[\\[\\]_:\"'`?;\\”0-9—;“()-/.,*! ]", "");
         String testChange;
         if (name.contains("jpg")){
             name = title + ".jpg";
@@ -77,10 +78,14 @@ class Images{
         InputStream in = url.openStream(); //reads the bytes from our stream (website)
         // The openStream() method returns a java.io.InputStream object, so reading from a URL is as easy as reading from an input stream. (from java documentation https://docs.oracle.com/javase/tutorial/networking/urls/readingURL.html)
         OutputStream out = new BufferedOutputStream(new FileOutputStream(folderPath + name)); // bufferedoutputstream allows us to write to the computer without calling the underlying system byte-per-byte
+        byte[] b = new byte[20480];
+        int length;
 
-        for(int b; (b = in.read()) != -1;){ // for all pictures, write them to output file
-            out.write(b); // writes to folder path
+        while ((length = in.read(b)) != -1) {
+            //writing it to a file
+            out.write(b, 0, length) ;
         }
+
         try {
             System.out.println(folderPath + name);
             BufferedImage img = ImageIO.read(new File(folderPath + name));
