@@ -5,12 +5,10 @@ import java.util.logging.Logger;
 import java.io.*; //I/O stream
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import org.jsoup.Jsoup;//web scraper
 import org.jsoup.nodes.Document;//document is basically the website made into a readable file of html
 import org.jsoup.nodes.Element;//elements within the document, like pics or sources
 import org.jsoup.select.Elements;
-
 import java.io.File;
 import java.io.IOException;
 import java.awt.image.BufferedImage;
@@ -20,10 +18,6 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 class Images{
-
-    //private static String webSiteURL = "https://www.reddit.com/r/pics/comments/9ytwct/photo_of_the_day/"; //original source to scrap from-- TODO: Create UI to have an entry field that stores into this variable
-    //private static String folderPath = System.getProperty("user.home")+"/Downloads/"; //finds the users local downloads folder TODO: create a UI to store the folder path in this location
-    // private because when you try to use these in an OutPutStream, they must be static... might make problems if we want to change the URL?
     public static void main(String webSiteURL, String folderPath){
         try{
 
@@ -55,39 +49,39 @@ class Images{
         }
         indexName = src.lastIndexOf("/");
         String name = src.substring(indexName);//creates string from / (beginning) to the end of the string's length
+
+        //Removes the subreddit and unneeded characters from title
         String newTitle = title.substring(0, title.indexOf(" :"));
-        //newTitle = newTitle.replaceAll("[\\[\\]_:\"'`?;\\”0-9—;“()-/.,*! ]", "");
-        String testChange;
+
+        //Determines if image is JPG or PNG
         if (name.contains("jpg")){
             name = newTitle + ".jpg";
-            testChange = "jpg";
         }
         else if (name.contains("png")){
             name = newTitle + ".png";
-            testChange = "png";
         }
-        else{ testChange = "nothing";
-        }
-        System.out.println(testChange);
+        else{}
 
         //must open stream for URL
         URL url = new URL(src); //creates new URL
+
+        //Finds image file size
         long size  = url.openConnection().getContentLength();//
-        //name = "Reddit Image";
 
         InputStream in = url.openStream(); //reads the bytes from our stream (website)
         // The openStream() method returns a java.io.InputStream object, so reading from a URL is as easy as reading from an input stream. (from java documentation https://docs.oracle.com/javase/tutorial/networking/urls/readingURL.html)
         OutputStream out = new BufferedOutputStream(new FileOutputStream(folderPath + name)); // bufferedoutputstream allows us to write to the computer without calling the underlying system byte-per-byte
+
         byte[] b = new byte[20480];
         int length;
-
         while ((length = in.read(b)) != -1) {
             //writing it to a file
             out.write(b, 0, length) ;
         }
 
+        //Opens new window and displays downloaded image
         try {
-            System.out.println(folderPath + name);
+            System.out.println(name + " " + "[" + size + "KBs" + "]");
             BufferedImage img = ImageIO.read(new File(folderPath + name));
             ImageIcon icon = new ImageIcon(img);
             JLabel label = new JLabel(icon);
@@ -98,5 +92,4 @@ class Images{
         out.close(); //close Streams to avoid memory leaks
         in.close();
     }
-
 }
