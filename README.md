@@ -25,7 +25,8 @@
 4. If you wish to close the prpgram entirely click the button labled "exit"
 
 # Project Approach
-- 
--
--
--
+- Idea at first was to create a web scraping code that took images off of a given URL, that ran inside the computers terminal
+- Then it was decided to create a GUI for the program
+- After deciding a GUI we created pathfile location options in the GUI to run in the code
+- Then it was decided to not have the program run forever, so gave an option to exit the code completly 
+- The last Idea that was incorperated into the code was to display the image in the GUI for the user to see their image
