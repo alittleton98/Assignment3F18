@@ -103,3 +103,4 @@ class GUI extends JFrame{
 
     }
 }
+//     EXAMPLE REDDIT URL https://www.reddit.com/r/pics/comments/a1sbka/a_sensational_sunset/
