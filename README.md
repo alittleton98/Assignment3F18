@@ -17,3 +17,13 @@
 2. A folder path command is present to save the file in any location valid in the machine (location options provided in the GUI display)
 3. After the image file is downloaded the file is displayed to the user
 
+# Instructions 
+1. Run the GUI.java main to activate the program (Images.java will not work unless GUI.java main method is activated)
+2. Insert or paste a valid reddit URL into the URL search bar
+2. Click the option labled "choose Location", and pick an option of where you want the image to be saved on your machine
+3. Click the button labled "begin image scrape"
+4. If you wish to close the prpgram entirely click the button labled "exit"
+
+# Project Approach
+
+# Requirements
