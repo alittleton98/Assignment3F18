@@ -26,13 +26,17 @@ class Images{
             for(Element el : className){
                 //gets the "absolute" URL of the SRC, AKA the online host of the picture
                 String src = el.absUrl("src");
-
-                if(el.hasClass("_2_tDEnGMLxpM6uOa2kaDB3")){//if the img has class "_2_tDEnGMLxpM6uOa2kaDB3" it is the post-content section. This is exclusive to reddit's CSS
-                    System.out.println("image found");//prints when image is found
-                    getImages(src, folderPath, title); //calls getImage method with the SRC as the source for the picture for us to obtain
+                //if the img has class "_2_tDEnGMLxpM6uOa2kaDB3" it is the post-content section. This is exclusive to reddit's CSS
+                //prints when image is found
+                //calls getImage method with the SRC as the source for the picture for us to obtain
+                if(el.hasClass("_2_tDEnGMLxpM6uOa2kaDB3")){
+                    System.out.println("image found");
+                    getImages(src, folderPath, title);
                 }
             }
-        } catch(IOException ex){ //if no pic is found, throw exception and log it as severe failure
+        }
+        //if no pic is found, throw exception and log it as severe failure
+        catch(IOException ex){
             System.out.println("error.");
             Logger.getLogger(Images.class.getName()).log(Level.SEVERE,null,ex);
         }
@@ -42,13 +46,16 @@ class Images{
         choice = System.getProperty("user.home");
     }
     private static void getImages(String src, String folderPath, String title) throws IOException{
-        int indexName = src.lastIndexOf("/");// extract image name from src attribute EX: https://www.youtube.com/ <-- will stop at last forward slash and get the index of the last "/"
-        //System.out.println(indexName);
+        // extract image name from src attribute EX: https://www.youtube.com/
+        // will stop at last forward slash and get the index of the last "/"
+        int indexName = src.lastIndexOf("/");
         if (indexName == src.length()){
+            //creates string from start of URL to end
             src = src.substring(1,indexName);//creates string from start of URL to end
         }
         indexName = src.lastIndexOf("/");
-        String name = src.substring(indexName);//creates string from / (beginning) to the end of the string's length
+        //creates string from / (beginning) to the end of the string's length
+        String name = src.substring(indexName);
 
         //Removes the subreddit and unneeded characters from title
         String newTitle = title.substring(0, title.indexOf(" :"));
