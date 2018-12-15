@@ -35,7 +35,7 @@ class GUI extends JFrame{
     }
     //CREATE GUI
     public GUI(){
-        super("Reddit Image Scraper");
+        super("GitPic");
         setSize(625,300);
         setResizable(true);
         panel.add(instruction);
