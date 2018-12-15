@@ -75,7 +75,8 @@ class Images{
         //Finds image file size
         long size  = url.openConnection().getContentLength();//
 
-        InputStream in = url.openStream(); //reads the bytes from our stream (website)
+        //reads the bytes from our stream (website)
+        InputStream in = url.openStream();
         // The openStream() method returns a java.io.InputStream object, so reading from a URL is as easy as reading from an input stream.
         // (from java documentation https://docs.oracle.com/javase/tutorial/networking/urls/readingURL.html)
         // bufferedoutputstream allows us to write to the computer without calling the underlying system byte-per-byte
