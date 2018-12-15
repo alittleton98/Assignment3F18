@@ -2,9 +2,6 @@ import java.io.*;//for website
 import java.net.URL;//retrieve url
 import java.util.logging.Level;//log errors
 import java.util.logging.Logger;
-import java.io.*; //I/O stream
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.jsoup.Jsoup;//web scraper
 import org.jsoup.nodes.Document;//document is basically the website made into a readable file of html
 import org.jsoup.nodes.Element;//elements within the document, like pics or sources
@@ -20,12 +17,15 @@ import javax.swing.JOptionPane;
 class Images{
     public static void main(String webSiteURL, String folderPath){
         try{
-
-            Document doc = Jsoup.connect(webSiteURL).get(); //connects to website and makes it a document (basically a file)
-            Elements className = doc.getElementsByTag("img"); //finds all elements in the new doc that match the "img" tag
+            //connects to website and makes it a document (basically a file)
+            Document doc = Jsoup.connect(webSiteURL).get();
+            //finds all elements in the new doc that match the "img" tag
+            Elements className = doc.getElementsByTag("img");
             String title = doc.title();
-            for(Element el : className){// for each element, get source (src) url
-                String src = el.absUrl("src"); //gets the "absolute" URL of the SRC, AKA the online host of the picture
+            // for each element, get source (src) url
+            for(Element el : className){
+                //gets the "absolute" URL of the SRC, AKA the online host of the picture
+                String src = el.absUrl("src");
 
                 if(el.hasClass("_2_tDEnGMLxpM6uOa2kaDB3")){//if the img has class "_2_tDEnGMLxpM6uOa2kaDB3" it is the post-content section. This is exclusive to reddit's CSS
                     System.out.println("image found");//prints when image is found
