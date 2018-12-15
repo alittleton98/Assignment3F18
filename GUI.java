@@ -98,13 +98,13 @@ class GUI extends JFrame{
                     folderPath = System.getProperty("user.home")+"/Pictures/";
                     System.out.println(folderPath);
                 }
-                if ((choices).equals("Root")) {// if choice is root, get root location and set as folderPath
+                // if choice is root, get root location and set as folderPath
+                if ((choices).equals("Root")) {
                     folderPath = System.getProperty("user.home")+"/";
                     System.out.println(folderPath);
                 }
             }
         });
-
     }
 }
 //     EXAMPLE REDDIT URL https://www.reddit.com/r/pics/comments/a1sbka/a_sensational_sunset/
