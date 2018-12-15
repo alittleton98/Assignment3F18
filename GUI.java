@@ -88,11 +88,12 @@ class GUI extends JFrame{
                     folderPath = System.getProperty("user.home")+"/Desktop/";
                     System.out.println(folderPath);
                 }
-
-                if ((choices).equals("Documents")) {// if choice is documents, get documents location and set as folderPath
+                // if choice is documents, get documents location and set as folderPath
+                if ((choices).equals("Documents")) {
                     folderPath = System.getProperty("user.home")+"/Documents/";
                     System.out.println(folderPath);
                 }
+                // if choice is pictures, get pictures location and set as folderPath
                 if ((choices).equals("Pictures")) {// if choice is pictures, get pictures location and set as folderPath
                     folderPath = System.getProperty("user.home")+"/Pictures/";
                     System.out.println(folderPath);
