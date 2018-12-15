@@ -41,6 +41,7 @@ class Images{
             Logger.getLogger(Images.class.getName()).log(Level.SEVERE,null,ex);
         }
     }
+
     public static void path (String choice){
         choice = System.getProperty("user.home");
     }
@@ -65,8 +66,7 @@ class Images{
         }
         else if (name.contains("png")){
             name = newTitle + ".png";
-        }
-        else{}
+        } else{}
 
         //must open stream for URL
         URL url = new URL(src); //creates new URL
