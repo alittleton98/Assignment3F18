@@ -76,16 +76,16 @@ class Images{
         long size  = url.openConnection().getContentLength();//
 
         InputStream in = url.openStream(); //reads the bytes from our stream (website)
-        // The openStream() method returns a java.io.InputStream object, so reading from a URL is as easy as reading from an input stream. (from java documentation https://docs.oracle.com/javase/tutorial/networking/urls/readingURL.html)
-        OutputStream out = new BufferedOutputStream(new FileOutputStream(folderPath + name)); // bufferedoutputstream allows us to write to the computer without calling the underlying system byte-per-byte
-
+        // The openStream() method returns a java.io.InputStream object, so reading from a URL is as easy as reading from an input stream.
+        // (from java documentation https://docs.oracle.com/javase/tutorial/networking/urls/readingURL.html)
+        // bufferedoutputstream allows us to write to the computer without calling the underlying system byte-per-byte
+        OutputStream out = new BufferedOutputStream(new FileOutputStream(folderPath + name));
         byte[] b = new byte[20480];
         int length;
         while ((length = in.read(b)) != -1) {
             //writing it to a file
             out.write(b, 0, length) ;
         }
-
         //Opens new window and displays downloaded image
         try {
             System.out.println(name + " " + "[" + size + "KBs" + "]");
@@ -96,7 +96,8 @@ class Images{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        out.close(); //close Streams to avoid memory leaks
+        //close Streams to avoid memory leaks
+        out.close();
         in.close();
     }
 }
