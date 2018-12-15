@@ -22,8 +22,10 @@ class Images{
             //finds all elements in the new doc that match the "img" tag
             Elements className = doc.getElementsByTag("img");
             String title = doc.title();
-            for(Element el : className){// for each element, get source (src) url
-                String src = el.absUrl("src"); //gets the "absolute" URL of the SRC, AKA the online host of the picture
+            // for each element, get source (src) url
+            for(Element el : className){
+                //gets the "absolute" URL of the SRC, AKA the online host of the picture
+                String src = el.absUrl("src");
 
                 if(el.hasClass("_2_tDEnGMLxpM6uOa2kaDB3")){//if the img has class "_2_tDEnGMLxpM6uOa2kaDB3" it is the post-content section. This is exclusive to reddit's CSS
                     System.out.println("image found");//prints when image is found
