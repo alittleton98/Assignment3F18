@@ -40,7 +40,6 @@ class Images{
             System.out.println("error.");
             Logger.getLogger(Images.class.getName()).log(Level.SEVERE,null,ex);
         }
-
     }
     public static void path (String choice){
         choice = System.getProperty("user.home");

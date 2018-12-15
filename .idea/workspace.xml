@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cad05c7f-f798-4464-bfa0-406a1a1feeee" name="Default" comment="removed">
-      <change beforePath="$PROJECT_DIR$/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.java" afterDir="false" />
+    <list default="true" id="cad05c7f-f798-4464-bfa0-406a1a1feeee" name="Default" comment="Indents">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/Images.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -147,14 +148,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3085" />
-          <entry key="txt" value="224" />
+          <entry key="java" value="3100" />
+          <entry key="txt" value="291" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3084" />
-          <entry key="PLAIN_TEXT" value="224" />
+          <entry key="JAVA" value="3099" />
+          <entry key="PLAIN_TEXT" value="291" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -173,11 +174,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Images.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="102" column="1" lean-forward="true" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
+            <state relative-caret-position="445">
+              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2019#2020#0" expanded="true" />
@@ -187,11 +188,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="77" column="58" selection-start-line="77" selection-start-column="58" selection-end-line="77" selection-end-column="58" />
+            <state relative-caret-position="1005">
+              <caret line="73" column="27" lean-forward="true" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -225,8 +226,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-        <option value="$PROJECT_DIR$/Images.java" />
         <option value="$PROJECT_DIR$/GUI.java" />
+        <option value="$PROJECT_DIR$/Images.java" />
       </list>
     </option>
   </component>
@@ -282,7 +283,7 @@
     <property name="SearchEverywhereHistoryKey" value="UML&#9;PSI&#9;JAVA://sun.font.BidiUtils#NUMLEVELS" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544901738124" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544901764368" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jsoup-1.11.3.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -393,7 +394,7 @@
       <workItem from="1543626413001" duration="10311000" />
       <workItem from="1543864947384" duration="14139000" />
       <workItem from="1544139471130" duration="4308000" />
-      <workItem from="1544901251390" duration="290000" />
+      <workItem from="1544901251390" duration="549000" />
     </task>
     <task id="LOCAL-00001" summary="Minor additions and changes to GUI">
       <created>1541611501455</created>
@@ -493,11 +494,53 @@
       <option name="project" value="LOCAL" />
       <updated>1544901379281</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Label">
+      <created>1544901557119</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1544901557119</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Changed name and spacing">
+      <created>1544901579100</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1544901579100</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Spacing/label">
+      <created>1544901630801</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1544901630801</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Spacing/label">
+      <created>1544901664863</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1544901664863</updated>
+    </task>
+    <task id="LOCAL-00019" summary="removal of stuff">
+      <created>1544901709979</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1544901709979</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Indents">
+      <created>1544901781125</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1544901781125</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47377000" />
+    <option name="totallyTimeSpent" value="47636000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -606,31 +649,36 @@
     <MESSAGE value="Added object labels" />
     <MESSAGE value="Labels and removal" />
     <MESSAGE value="removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed" />
+    <MESSAGE value="Label" />
+    <MESSAGE value="Changed name and spacing" />
+    <MESSAGE value="Spacing/label" />
+    <MESSAGE value="removal of stuff" />
+    <MESSAGE value="Indents" />
+    <option name="LAST_COMMIT_MESSAGE" value="Indents" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.desktop/sun/font/BidiUtils.java" />
     <entry file="file://$PROJECT_DIR$/nullReddit Image.jpg" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/com/sun/imageio/plugins/png/PNGImageReader.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-    <entry file="file://$PROJECT_DIR$/Images.java">
+    <entry file="file://$PROJECT_DIR$/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="102" column="1" lean-forward="true" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
+        <state relative-caret-position="1005">
+          <caret line="73" column="27" lean-forward="true" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2019#2020#0" expanded="true" />
-            <element signature="e#2075#2076#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUI.java">
+    <entry file="file://$PROJECT_DIR$/Images.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="77" column="58" selection-start-line="77" selection-start-column="58" selection-end-line="77" selection-end-column="58" />
+        <state relative-caret-position="445">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2019#2020#0" expanded="true" />
+            <element signature="e#2075#2076#0" expanded="true" />
           </folding>
         </state>
       </provider>
