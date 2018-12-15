@@ -17,9 +17,10 @@ import javax.swing.JOptionPane;
 class Images{
     public static void main(String webSiteURL, String folderPath){
         try{
-
-            Document doc = Jsoup.connect(webSiteURL).get(); //connects to website and makes it a document (basically a file)
-            Elements className = doc.getElementsByTag("img"); //finds all elements in the new doc that match the "img" tag
+            //connects to website and makes it a document (basically a file)
+            Document doc = Jsoup.connect(webSiteURL).get();
+            //finds all elements in the new doc that match the "img" tag
+            Elements className = doc.getElementsByTag("img");
             String title = doc.title();
             for(Element el : className){// for each element, get source (src) url
                 String src = el.absUrl("src"); //gets the "absolute" URL of the SRC, AKA the online host of the picture
