@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cad05c7f-f798-4464-bfa0-406a1a1feeee" name="Default" comment="Added object labels">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/Images.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/GUI$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/Images.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/Images.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment3F18/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment3F18/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -181,7 +173,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Images.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -193,11 +185,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="105" column="93" lean-forward="true" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="93" />
+            <state relative-caret-position="261">
+              <caret line="105" column="93" lean-forward="true" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -228,8 +220,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-        <option value="$PROJECT_DIR$/GUI.java" />
         <option value="$PROJECT_DIR$/Images.java" />
+        <option value="$PROJECT_DIR$/GUI.java" />
       </list>
     </option>
   </component>
@@ -242,7 +234,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1378" />
-    <option name="height" value="726" />
+    <option name="height" value="713" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -285,7 +277,7 @@
     <property name="SearchEverywhereHistoryKey" value="UML&#9;PSI&#9;JAVA://sun.font.BidiUtils#NUMLEVELS" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544196007391" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544898408974" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jsoup-1.11.3.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -395,7 +387,7 @@
       <workItem from="1542762668341" duration="6524000" />
       <workItem from="1543626413001" duration="10311000" />
       <workItem from="1543864947384" duration="14139000" />
-      <workItem from="1544139471130" duration="1764000" />
+      <workItem from="1544139471130" duration="4308000" />
     </task>
     <task id="LOCAL-00001" summary="Minor additions and changes to GUI">
       <created>1541611501455</created>
@@ -485,7 +477,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44543000" />
+    <option name="totallyTimeSpent" value="47087000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -497,9 +489,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1378" height="726" extended-state="0" />
+    <frame x="0" y="23" width="1378" height="713" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.109281436" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.109281436" />
       <window_info id="Structure" order="1" weight="0.24945533" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -512,17 +504,17 @@
       <window_info id="simpleUML" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49625748" weight="0.33911672" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49550897" weight="0.33977455" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4997236" weight="0.32956383" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.498503" weight="0.42992127" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50149703" side_tool="true" visible="true" weight="0.33438486" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49962604" weight="0.32750398" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.497006" visible="true" weight="0.4347826" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.502994" side_tool="true" visible="true" weight="0.4347826" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49925148" weight="0.32649842" />
       <window_info anchor="bottom" id="Console" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.498503" visible="true" weight="0.33438486" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.498503" weight="0.33438486" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -598,13 +590,6 @@
     <entry file="file://$PROJECT_DIR$/nullReddit Image.jpg" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/com/sun/imageio/plugins/png/PNGImageReader.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-    <entry file="file://$PROJECT_DIR$/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="105" column="93" lean-forward="true" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Images.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -612,6 +597,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="105" column="93" lean-forward="true" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="93" />
         </state>
       </provider>
     </entry>
