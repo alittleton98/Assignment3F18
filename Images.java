@@ -2,9 +2,6 @@ import java.io.*;//for website
 import java.net.URL;//retrieve url
 import java.util.logging.Level;//log errors
 import java.util.logging.Logger;
-import java.io.*; //I/O stream
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.jsoup.Jsoup;//web scraper
 import org.jsoup.nodes.Document;//document is basically the website made into a readable file of html
 import org.jsoup.nodes.Element;//elements within the document, like pics or sources
