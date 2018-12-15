@@ -77,13 +77,14 @@ class GUI extends JFrame{
                 //fetch user choice from drop down
                 JComboBox cb = (JComboBox) e.getSource();
                 //set choices equal to selected item in JComboBox cb... Updates live!
-                String choices = (String) cb.getSelectedItem(); 
-                if ((choices).equals("Downloads")) { // if choice is downloads, get downloads location and set as folderPath
+                String choices = (String) cb.getSelectedItem();
+                // if choice is downloads, get downloads location and set as folderPath
+                if ((choices).equals("Downloads")) {
                     folderPath = System.getProperty("user.home")+"/Downloads/";
                     System.out.println(folderPath);
                 }
-
-                if ((choices).equals("Desktop")) {// if choice is desktop, get desktop location and set as folderPath
+                // if choice is desktop, get desktop location and set as folderPath
+                if ((choices).equals("Desktop")) {
                     folderPath = System.getProperty("user.home")+"/Desktop/";
                     System.out.println(folderPath);
                 }
