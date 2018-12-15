@@ -74,7 +74,8 @@ class GUI extends JFrame{
         //DIRECTORY CHOICES
         choicesButton.addActionListener(new ActionListener(){// add event listener to choicesButton
             public void actionPerformed(ActionEvent e) {
-                JComboBox cb = (JComboBox) e.getSource(); //fetch user choice from drop down
+                //fetch user choice from drop down
+                JComboBox cb = (JComboBox) e.getSource(); 
                 String choices = (String) cb.getSelectedItem(); //set choices equal to selected item in JComboBox cb... Updates live!
                 if ((choices).equals("Downloads")) { // if choice is downloads, get downloads location and set as folderPath
                     folderPath = System.getProperty("user.home")+"/Downloads/";
